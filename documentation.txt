@@ -1,0 +1,45 @@
+for login and singUp:
+{
+    "userName":"",
+    "password":""
+}
+---------------------------------------
+Input invoice:
+{
+    "invoice":{
+        "invoice_id":null,  // auto 
+        "car": {
+            "car_id":null,  // auto
+            "car_plate":"12356",
+            "car_size":"large",
+            "car_description":""
+        },
+       "user_id":null,  // auto
+       "invoice_date":null,  // auto
+       "invoice_time":null,  // auto
+       "total_amount": 10.00,
+       "deducted_amount": 0.00,
+       "paid_amount": 10.00
+    }
+}
+---------------------------------------
+Input Order:
+{
+    "order":{
+         "order_id":null, //auto
+         "service_id":7,
+         "invoice_id":1
+    }
+}
+---------------------------------------
+Input Service:
+{
+    "service":{
+        "service_id":null, // auto
+        "service_name":"",
+        "service_description":"",
+        "service_price":0.00,
+        "quantity":0.00
+    }
+}
+---------------------------------------
