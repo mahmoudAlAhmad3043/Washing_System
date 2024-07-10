@@ -3,9 +3,9 @@ import express from 'express';
 const OrdersRouter = express.Router();
 
 
-OrdersRouter.post('/orders/addOrder',OrdersController.addOrderCtrl);
-OrdersRouter.delete('/orders/deleteOrder/:order_id',OrdersController.deleteOrderCtrl);
-OrdersRouter.get('/orders/getOrders/:invoice_id',OrdersController.getOrdersByInvoiceIdCtrl);
+OrdersRouter.post('/orders/add-order',OrdersController.addOrderCtrl);
+OrdersRouter.delete('/orders/delete-order/:order_id',OrdersController.deleteOrderCtrl);
+OrdersRouter.get('/orders/get-orders/:invoice_id',OrdersController.getOrdersByInvoiceIdCtrl);
 
 
 export default OrdersRouter;
