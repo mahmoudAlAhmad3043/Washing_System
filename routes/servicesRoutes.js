@@ -3,10 +3,10 @@ import express from 'express';
 const ServiceRouter = express.Router();
 
 
-ServiceRouter.post('/services/addService',ServiceController.addServiceCtrl);
-ServiceRouter.post('/services/editService',ServiceController.editServiceCtrl);
-ServiceRouter.delete('/services/deleteService/:service_id',ServiceController.deleteServiceCtrl);
-ServiceRouter.get('/services/getServices',ServiceController.getAllServicesCtrl);
-ServiceRouter.post('/services/sellectedServices/:searchWord',ServiceController.getSellectedServiceCtrl);
+ServiceRouter.post('/services/add-service',ServiceController.addServiceCtrl);
+ServiceRouter.post('/services/edit-service',ServiceController.editServiceCtrl);
+ServiceRouter.delete('/services/delete-service/:service_id',ServiceController.deleteServiceCtrl);
+ServiceRouter.get('/services/get-services',ServiceController.getAllServicesCtrl);
+ServiceRouter.post('/services/sellected-services/:searchWord',ServiceController.getSellectedServiceCtrl);
 
 export default ServiceRouter;
